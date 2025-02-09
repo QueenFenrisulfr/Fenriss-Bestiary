@@ -1,0 +1,396 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FenrissBestiary",
+				"abbreviation": "FrB",
+				"full": "Fenris's Bestiary",
+				"version": "1.0.0",
+				"authors": [
+					"Fenris Ulfr"
+				],
+				"convertedBy": [
+					"Fenris Ulfr"
+				]
+			}
+		],
+		"dateAdded": 1684728001,
+		"dateLastModified": 1684728001
+	},
+	"spell": [
+		{
+			"name": "Avatar of Nature",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"*(Druid)*",
+				"- **Frequency** Legendary",
+				"_________",
+				"You call upon primal and elemental forces to aid you, you become the avatar of their might and wrath.",
+				"While in this form you gain the following",
+				"-  Imunity to fire, cold and lightning",
+				"-  Resistance to all but Psychic, necrotic and radiant",
+				"-  your Base speed doubles, and gain equal fly(hover) and swiming speed",
+				"-  you gain a burrow speed of 30ft",
+				"-  You nolonger need air, and cant be {@condition charmed} or put to sleep",
+				"-  one size larger",
+				"-  you gain 50 temp hp and gain 10 temp hp at the start of your turn",
+				"-  YOu gain +2 to ac and an additional action, this action can be used for a singular atack or feature, but not spellcasting",
+				"-  As a Bonus Action when you hit a creature with an non-spell atack you can deal {@dice 2d8} Lightning, Cold, Thunder, Fire, Poison, Acid, Bludedgeoning, piercing or slashing dmg. You can use your reaction to add {@dice 1d10} of the same element to one nonspell atack you see with in 120ft",
+				"-  Land stride. You are under the effects of tree stride, and as a BA can teleport to any spot you can see with in 60ft that is non worked stone or metal. You cant be slowed by terrain or weather, including from druid spells such as plant growth",
+				"- Elemental Quagmire. as an action , You can place up to 4 areas of dificult terrain, Choosing Earth , Air, Fire , Water or Oak. this areas are 30ft of radius, whenever you use this feature you may change or move the type of each individual area, when they apear you may choose all be diferent or the same. Earth, the area is affected by the spike growth spell. Air The area is affected by the sleet storm effect, Fire acts as touching a wall of fire(dex save to jup out the area as it apears), Water creates a 30ft radius sphere of water under Control water's whirpool's effect and Oak Creates a 30ft area affected by  Plant growth's speed reduction and entangle restrain",
+				"Whenever you use this action you can choose any number of creatures to be immune to any speed reduction from this feature",
+				"-  Healing Spirits. As an action you may heal all creatures of your choice by {@dice 3d8}+wisdom with in a 300ft radious, This also ends the Paralyzed , Poisoned conditions and ends any mundane illness on those creatures"
+			],
+			"source": "FenrissBestiary",
+			"components": {
+				"v": true,
+				"s": true
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Cthulhu",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "aberration",
+				"note": "(Outer God)"
+			},
+			"source": "FenrissBestiary",
+			"alignment": [
+				"C"
+			],
+			"ac": [
+				{
+					"ac": 25,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d20 + 210",
+				"average": 525
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 200,
+					"condition": "(hover)"
+				},
+				"canHover": true,
+				"swim": 60
+			},
+			"str": 24,
+			"dex": 20,
+			"con": 25,
+			"int": 24,
+			"wis": 24,
+			"cha": 30,
+			"passive": 25,
+			"cr": "27",
+			"senses": [
+				"darkvision 60 miles.",
+				"truesight 300 ft."
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languages": [
+				"Aklo",
+				"Deep Speech",
+				"Draconic",
+				"Primordial",
+				"Telepathy 60miles"
+			],
+			"languageTags": [
+				"DS",
+				"DR",
+				"P"
+			],
+			"save": {
+				"str": "+15",
+				"con": "+15",
+				"int": "+15",
+				"wis": "+15",
+				"cha": "+18"
+			},
+			"skill": {
+				"arcana": "+23",
+				"deception": "+26",
+				"history": "+15",
+				"intimidation": "+26",
+				"perception": "+15",
+				"persuasion": "+18",
+				"religion": "+15",
+				"athletics": "+23"
+			},
+			"resist": [
+				"acid",
+				"bludgeoning",
+				"force",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"cold",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Non-Euclidian",
+					"entries": [
+						"Cthulhu does not exist wholly in the physical world, and space and time strain against his presence. This grants Cthulhu a deflection bonus to AC of 10 + Charisma +Dex . ",
+						"His apparent and actual position are never quite the same, All atacks against him have disadvantage, creatures cant gain advantage on atacks against him.",
+						"Creatures With True sight may make a dc 26 wisdom save to nagate the disadvantage"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Cthulhu has advantage against spells and other magical effects"
+					]
+				},
+				{
+					"name": "Eldritch Truth",
+					"entries": [
+						"This effect triggers only once, no mater how many creatures with the feature have it , and the effect is based on the highest DC.",
+						"First time a Creature witness Cthulhu, it must make an inteligence check vs its own inteligence score, on a success the creature understands the implications of the Eldritch Truth and must make a DC26 Wisdom saving throw or be {@condition frightened} until saves. While frigtened this way the creature gains 1 lvl of madness at the start of their turn. The creature saves against this at the end of their turn, on a success the {@condition frightened} condition ends, but not any madness.",
+						"Creatures imune to Psychic, with the Mind Blank Spell or immune to the {@condition frightened} condition are imune to this effect. A creature that saves is imune to this feature for 24 hours or until they witness a higher DC eldritch truth"
+					]
+				},
+				{
+					"name": "It has awoken (Recharges on a LR or SR)",
+					"entries": [
+						"When Cthulhu is reduces to 0 hp he can force himself to manifest more compleatetly in the material plane or simply return to his domain in the void.",
+						"If he chooses to awake , He gains immunity to the Frightened  and Charmed Condition, his HP and Spells Reset  as if he took a long rest, his Legendary resistances reset and gains access to his mythic actions.",
+						"If Awoken Cthulhu is reduced to 0 hp while in the material plane it melts into a 500ft radius cloudkill as his consiousness returns to the void.",
+						"If Awoken Cthulhu is reduced to 0hp while in his domain, his hp is restored and he returns to his not awoken version. looses access to all given by this feature.",
+						"Cthulhu can only be permanently destroyed by reducing  him to 0hp in his domain, and  plane shift his compleate form to the  material plane , where he would truely die vanishing like a nightmare as his abstract form becomes succeptible to the concept of material death"
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/SR)",
+					"entries": [
+						"When fails a save can choose to sacceed"
+					]
+				},
+				{
+					"name": "Everpresent Tendrils (While awoken)",
+					"entries": [
+						"All Creatures of Cthulhu's choice that start a turn with in 10 miles of him must make a Dc21 Dex save or be {@condition grappled} and Restrained (Escape {@dc 26})."
+					]
+				},
+				{
+					"name": "Greater Starflight",
+					"entries": [
+						"Cthulhu can travel to any point in a single star system, arriving ind {@dice 2d6} hours. ",
+						"Cthulhu Can travel to any other point in the same Universe , arriving with in  {@dice 2d6} days.",
+						"Cthulhu requires no food, air or drink"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"isNamedCreature": true,
+			"action": [
+				{
+					"name": "Multiatack",
+					"entries": [
+						"Cthulhu Makes 4 atacks, can replace 1 atack with an at will spell"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}24 ({@damage 4d6 + 10}) Slashing damage.",
+						" If Cthulhu scores a critical hit against a creature traveling by means of the astral projection spell, Cthulhu can cut the target's silver cord instead of dealing damage."
+					]
+				},
+				{
+					"name": "Devour",
+					"entries": [
+						"As an action Cthulhu consumes all creatures he is grappling, all creatures must make a {@dc 23} Strenght save or take {@damage 18d6} force damage. A creature reduced to 0 hp is consumed, Cthulhu regains 100hp per sentient creature consumend. Consumed creatures can only be resurrected by a True Resurrection spell, Wish, Divine intervention or similar magic"
+					]
+				},
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d6 + 10}) Bludgeoning damage plus {@h}17 ({@damage 2d6 + 10}) psychic damage.",
+						"A creature hit by this atack is Grappled and Restrained by Cthulhu (escape DC26)"
+					]
+				},
+				{
+					"name": "Dream of Cthulhu",
+					"entries": [
+						"All creatures with in 10 miles of Cthulhu must make a DC26 wisdom saving throw or be affected by the Dominate monster Spell. a Protection against evil spell prevents this feature. A creature that saves is imune to this for 24 hours"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Cthulhu can cast the following spells with out components, Cthulhu can concentrate on to 2 spells at a time, each use diferetn concentrations",
+						"DC26 and +18 to hit"
+					],
+					"constant": [
+						"{@spell freedom of movement}"
+					],
+					"will": [
+						"{@spell control weather} (as an action)",
+						"{@spell dispel magic} (at lvl 9)",
+						"{@spell dominate person}",
+						"{@spell dream} (6d6 dmg)",
+						"{@spell hunger of Hadar}",
+						"{@spell mind spike|XGE} (lvl5)",
+						"{@spell mirage arcane} (as an action)",
+						"{@spell scatter|XGE}",
+						"{@spell sending}",
+						"{@spell suggestion}",
+						"{@spell telekinesis} (Can target up to 6 large or smaller creatures, or 3 Huge)",
+						"{@spell telepathy} (Can target other planes like sending)",
+						"{@spell teleport}",
+						"{@spell true astral projection|FenrisGrimoire}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell antipathy/sympathy}",
+							"{@spell dominate monster}",
+							"{@spell feeblemind} (quickened)",
+							"{@spell forcecage}",
+							"{@spell gate} (summons2d4 starspawn or a cr25 or lower aberation)",
+							"{@spell hold monster}",
+							"{@spell mass suggestion}",
+							"{@spell mental prison|XGE}",
+							"{@spell symbol} (Action and Insanity only)",
+							"{@spell wall of force}",
+							"{@spell weird}"
+						],
+						"1e": [
+							"{@spell dark star|EGW}",
+							"{@spell disintegrate} (at lvl 9)",
+							"{@spell psychic scream|XGE}",
+							"{@spell ravenous void|EGW}",
+							"{@spell reality break|EGW}",
+							"{@spell wish}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Teleport (1 LA)",
+					"entries": [
+						"Cthulhu Teleports  to any point with in 300ft"
+					]
+				},
+				{
+					"name": "Atack or cast a spell (2 LA)",
+					"entries": [
+						"Cthulhu makes an atack or cast an at will spell"
+					]
+				},
+				{
+					"name": "Psionic Singularity (3 actions)",
+					"entries": [
+						"All creatures with an into of 5 or hight with in 10 miles  must make a dc26 int save or take {@dice 6d10} psychic dmg and be stuned till the end of their turn, half dmg on a save and no stun. Cthulhu instantly learns all that the creatures that failed the save know provided the creature is not protected by a protection against evil and good spell or similar magic"
+					]
+				}
+			],
+			"mythic": [
+				{
+					"name": "Non-Euclidian Singularity (3 MA)",
+					"entries": [
+						"The world arround Cthulhu becomes a clashing Non-Euclidian maelstorm, all creatures 10 miles of Cthulhu must make a dc26 wisdom save or take {@dice 10d10} psychic dmg , be affected by the confusion spell and have their speed halved, the effect ends when the creature is restored by a greater restoration or saves at the end of their turn"
+					]
+				},
+				{
+					"name": "Psionic Backlash (2 MA)",
+					"entries": [
+						"Up to 8 creatures Cthulhu can see that are {@status concentration||concentrating} on a spell take {@dice 6d6} psychic dmg, if they fail their {@status concentration} save they are {@condition stunned} till the end of their turn"
+					]
+				}
+			],
+			"damageTags": [
+				"Y"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"N",
+				"O",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
+			]
+		}
+	]
+}
