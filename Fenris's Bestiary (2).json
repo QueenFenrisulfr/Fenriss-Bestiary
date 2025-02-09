@@ -392,7 +392,6 @@
 				"wisdom"
 			]
 		}
-[
 	{
 		"name": "Adult Black Dragon",
 		"group": [
@@ -10511,6 +10510,6 @@
 		"hasFluff": true,
 		"hasFluffImages": true
 	}
-]
+
 	]
 }
